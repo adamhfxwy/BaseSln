@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\LanTian.Solution.Core.CommonHelper\LanTian.Solution.Core.CommonHelper.csproj" />
+		<ProjectReference Include="..\LanTian.Solution.Core.Domain\LanTian.Solution.Core.Domain.csproj" />
+		<ProjectReference Include="..\LanTian.Solution.Core.DTO\LanTian.Solution.Core.DTO.csproj" />
+		<ProjectReference Include="..\LanTian.Solution.Core.EnumAndConstent\LanTian.Solution.Core.EnumAndConstent.csproj" />
+		<ProjectReference Include="..\LanTian.Solution.Core.ParameterModel\LanTian.Solution.Core.ParameterModel.csproj" />
+		<PackageReference Include="aliyun-net-sdk-core" Version="1.5.11" />
+		<PackageReference Include="aliyun-net-sdk-dysmsapi" Version="1.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.7" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="CommonService\" />
+	</ItemGroup>
+</Project>
